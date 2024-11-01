@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OleDb, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.OleDb.8.0.1\lib\net462\System.Data.OleDb.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +60,19 @@
     </Compile>
     <Compile Include="ProfileLogin.Designer.cs">
       <DependentUpon>ProfileLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProLevel.Designer.cs">
+      <DependentUpon>ProLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Question.cs" />
+    <Compile Include="QuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuizForm.Designer.cs">
+      <DependentUpon>QuizForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TESTv].cs">
       <SubType>Form</SubType>
@@ -100,6 +116,12 @@
     <EmbeddedResource Include="ProfileLogin.resx">
       <DependentUpon>ProfileLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProLevel.resx">
+      <DependentUpon>ProLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizForm.resx">
+      <DependentUpon>QuizForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TESTv].resx">
       <DependentUpon>TESTv].cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +143,7 @@
     <EmbeddedResource Include="TheoryForm.resx">
       <DependentUpon>TheoryForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

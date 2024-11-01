@@ -23,19 +23,19 @@ namespace Viktorina
             score = 0;
 
             // Вопросы для легкого уровня
-            questions.Add(new Question("Сколько будет 2 + 2?", "4"));
-            questions.Add(new Question("Какой цвет у неба?", "голубой"));
-            questions.Add(new Question("Сколько дней в неделе?", "7"));
+            questions.Add(new Question("Что такое MIT App Inventor?", "Инструмент для разработки мобильных приложений"));
+            questions.Add(new Question("Какая основная цель MIT App Inventor?", " Развивать навыки программирования у начинающих"));
+            questions.Add(new Question("Какой компонент требуется для работы MIT App Inventor?", "aiStarter"));
 
             // Вопросы для среднего уровня
-            questions.Add(new Question("Кто написал 'Войну и мир'?", "Толстой"));
-            questions.Add(new Question("Какой элемент имеет символ 'O'?", "Кислород"));
+            questions.Add(new Question("Какое программное обеспечение нужно установить для работы с MIT App Inventor на компьютере с Windows?", "aiStarter"));
+            questions.Add(new Question("Проектирование пользовательского интерфейса\r\nКакой элемент пользовательского интерфейса позволяет добавлять кнопки и изображения?", "Конструктор"));
             questions.Add(new Question("Какой язык является основным для веб-разработки?", "JavaScript"));
 
             // Вопросы для продвинутого уровня
-            questions.Add(new Question("Какой алгоритм используется для сортировки?", "Сортировка слиянием"));
-            questions.Add(new Question("Что такое ООП?", "Объектно-ориентированное программирование"));
-            questions.Add(new Question("Какое число является квадратом 16?", "256"));
+            questions.Add(new Question("Какой компонент используется для установки фона приложения?", "Компонент изображения"));
+            questions.Add(new Question("Какой метод используется для увеличения сложности игры в MIT App Inventor?", "Какой метод используется для увеличения сложности игры в MIT App Inventor?"));
+            questions.Add(new Question("Какой блок используется для программирования движения мяча в игре?", "Какой блок используется для программирования движения мяча в игре?"));
 
             lblResult.Text = "";
         }

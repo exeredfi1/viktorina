@@ -37,9 +37,10 @@
             // 
             // ButtonEasy
             // 
-            this.ButtonEasy.Location = new System.Drawing.Point(247, 12);
+            this.ButtonEasy.Enabled = false;
+            this.ButtonEasy.Location = new System.Drawing.Point(334, 48);
             this.ButtonEasy.Name = "ButtonEasy";
-            this.ButtonEasy.Size = new System.Drawing.Size(327, 63);
+            this.ButtonEasy.Size = new System.Drawing.Size(141, 63);
             this.ButtonEasy.TabIndex = 0;
             this.ButtonEasy.Text = "Легкий";
             this.ButtonEasy.UseVisualStyleBackColor = true;
@@ -47,29 +48,29 @@
             // 
             // ButtonNormal
             // 
-            this.ButtonNormal.Enabled = false;
-            this.ButtonNormal.Location = new System.Drawing.Point(247, 98);
+            this.ButtonNormal.Location = new System.Drawing.Point(334, 117);
             this.ButtonNormal.Name = "ButtonNormal";
-            this.ButtonNormal.Size = new System.Drawing.Size(327, 63);
+            this.ButtonNormal.Size = new System.Drawing.Size(141, 63);
             this.ButtonNormal.TabIndex = 1;
-            this.ButtonNormal.Text = "Средний ";
+            this.ButtonNormal.Text = "Легкий";
             this.ButtonNormal.UseVisualStyleBackColor = true;
+            this.ButtonNormal.Click += new System.EventHandler(this.ButtonNormal_Click);
             // 
             // ButtonHard
             // 
-            this.ButtonHard.Enabled = false;
-            this.ButtonHard.Location = new System.Drawing.Point(247, 181);
+            this.ButtonHard.Location = new System.Drawing.Point(334, 186);
             this.ButtonHard.Name = "ButtonHard";
-            this.ButtonHard.Size = new System.Drawing.Size(327, 63);
+            this.ButtonHard.Size = new System.Drawing.Size(141, 63);
             this.ButtonHard.TabIndex = 2;
             this.ButtonHard.Text = "Продвинутый";
             this.ButtonHard.UseVisualStyleBackColor = true;
+            this.ButtonHard.Click += new System.EventHandler(this.ButtonHard_Click);
             // 
             // ButtonTheory
             // 
-            this.ButtonTheory.Location = new System.Drawing.Point(12, 387);
+            this.ButtonTheory.Location = new System.Drawing.Point(334, 255);
             this.ButtonTheory.Name = "ButtonTheory";
-            this.ButtonTheory.Size = new System.Drawing.Size(255, 63);
+            this.ButtonTheory.Size = new System.Drawing.Size(141, 63);
             this.ButtonTheory.TabIndex = 3;
             this.ButtonTheory.Text = "Теория";
             this.ButtonTheory.UseVisualStyleBackColor = true;
@@ -77,9 +78,9 @@
             // 
             // ButtonBack
             // 
-            this.ButtonBack.Location = new System.Drawing.Point(553, 390);
+            this.ButtonBack.Location = new System.Drawing.Point(334, 324);
             this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(237, 56);
+            this.ButtonBack.Size = new System.Drawing.Size(141, 56);
             this.ButtonBack.TabIndex = 4;
             this.ButtonBack.Text = "Назад";
             this.ButtonBack.UseVisualStyleBackColor = true;
@@ -89,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 462);
+            this.ClientSize = new System.Drawing.Size(807, 462);
             this.Controls.Add(this.ButtonBack);
             this.Controls.Add(this.ButtonTheory);
             this.Controls.Add(this.ButtonHard);
@@ -97,6 +98,7 @@
             this.Controls.Add(this.ButtonEasy);
             this.Name = "Start";
             this.Text = "Выбор сложности";
+            this.Load += new System.EventHandler(this.Start_Load);
             this.ResumeLayout(false);
 
         }

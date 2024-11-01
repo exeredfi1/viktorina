@@ -44,5 +44,28 @@ namespace Viktorina
             this.Hide();
 
         }
+
+        private void Start_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonNormal_Click(object sender, EventArgs e)
+        {
+            QuizForm quizform = new QuizForm();
+            // Открываем Form2
+            quizform.Show();
+            // Если нужно закрыть текущую форму, раскомментируйте следующую строку:
+            this.Hide();
+        }
+
+        private void ButtonHard_Click(object sender, EventArgs e)
+        {
+            ProLevel ProLevel = new ProLevel();
+            // Открываем Form2
+            ProLevel.Show();
+            // Если нужно закрыть текущую форму, раскомментируйте следующую строку:
+            this.Hide();
+        }
     }
 }
